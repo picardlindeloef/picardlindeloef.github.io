@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lindeloef</title>
+  <style>
+    body {
+      margin: 0;
+      font-size: 16pt;
+      background-image: url("content/v2.png");
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-color: rgb(136, 143, 178);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 10pt;
+      align-items: center;
+    }
+
+    .margin-headings {
+      margin: 20pt;
+      margin-top: 50pt;
+    }
+
+    .text {
+      max-width: 70vw;
+      text-align: center;
+      margin: 0 auto 20pt auto;
+      font-size: smaller;
+    }
+
+    .banner {
+      overflow: hidden;
+      white-space: nowrap;
+      background: black;
+      color: white;
+      max-width: 40vw;
+      margin: 0 auto;
+    }
+
+    .banner p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 30s linear infinite;
+    }
+
+    @keyframes scroll {
+      to { transform: translateX(-100%); }
+    }
+
+    .img {
+      width: 50vw;
+      transition: width 0.5s, height 0.5s;
+    }
+
+    .img:hover {
+      width: 60vw;
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 10pt;
+      }
+      .img {
+        width: 80vw;
+      }
+      .img:hover {
+        width: 80vw;
+      }
+      .none-on-mobile {
+        display: none;
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 20px;
+    }
+
+    .faq details {
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+    }
+
+    .faq summary {
+      cursor: pointer;
+    }
+
+    .faq p {
+      margin-left: 10pt;
+    }
+
+    .faq {
+      width: 100%;
+      max-width: 600px;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    .faq img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .faq details {
+      width: 100%;
+    }
+
+    .me-img {
+      width: 200pt;
+    }
+
+    .footer img{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Lindelöf</h1>
+    <div class="text">
+      <p>I like making doodles. Click on the open sketchbook to see more pages on my insta.</p>
+      <div class="banner">
+        <p>سلام، امیدوارم حالتان خوب باشد. 
+          こんにちは。お元気でいらっしゃいますように。
+          Здравствуйте. Надеюсь, у вас все хорошо. Hello. 
+          I hope you are doing well.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a href="https://instagram.com/kommtnobiddewarten">
+        <img src="content/a4.jpg" alt="a4" class="img"></img>
+      </a>
+    </div>
+
+
+    <h2 class="margin-headings">Socials</h2>
+
+    <div class="socials">
+      <a href="https://instagram.com/kommtnobiddewarten">
+        <img src="icons/instagram.png" alt="Instagram" width="120">
+      </a>
+      <a href="https://www.youtube.com/kommtnobiddewarten">
+        <img src="icons/youtube.png" alt="YouTube" width="100">
+      </a>
+      <a href="mailto:lindeloef@kommtnobiddewarten.com">
+        <img src="icons/mail.png" alt="Email" width="100">
+      </a>
+    </div>
+
+    <h2 class="margin-headings">FAQ</h2>
+
+    <section class="faq">
+      <details>
+        <summary>What does 'Lindelöf' mean?</summary>
+        <p>It's a Scandinavian name. I like it. Sounds like a good name for a band.</p>
+      </details>
+      <details>
+        <summary>Who are you?</summary>
+        <p><img src="content/me.jpeg" alt="Lindelöf" class="me-img"></img></p>
+      </details>
+      <details>
+        <summary>What is the purpose of this website?</summary>
+        <p>I want to become famous. Please follow me. I am desperate.</p>
+      </details>
+      <details>
+        <summary>If you were a unit in Age of Empires 2, which one would you be?</summary>
+        <p>A skirmisher. Or a catapult.</p>
+      </details>
+      <details>
+        <summary>When will your first EP finally drop?</summary>
+        <p>On December 21, 2028, 'Alles ist Senf' will be released. The first track is called 'Dippe die Kippe in Senf'.</p>
+      </details>
+      <details>
+        <summary>What are your favorite hobbies (besides art)?</summary>
+        <p>I like doing live-tastings. I also enjoy a good nap.</p>
+      </details>
+    </section>
+
+    <span class="margin-headings"></span>
+    
+    <div class="footer">
+      <a href="impressum.html">
+        <img src="content/footer0.png" alt="footer"></img>
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
