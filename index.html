@@ -13,6 +13,7 @@
       background-position: top;
       background-repeat: no-repeat;
       background-color: rgb(136, 143, 178);
+      font-family: sans-serif;
     }
     .container {
       display: flex;
@@ -31,7 +32,6 @@
       max-width: 70vw;
       text-align: center;
       margin: 0 auto 20pt auto;
-      font-size: smaller;
     }
 
     .banner {
@@ -39,14 +39,14 @@
       white-space: nowrap;
       background: black;
       color: white;
-      max-width: 40vw;
+      max-width: 45vw;
       margin: 0 auto;
     }
 
     .banner p {
       display: inline-block;
       padding-left: 100%;
-      animation: scroll 90s linear infinite;
+      animation: scroll 30s linear infinite;
     }
 
     @keyframes scroll {
@@ -54,12 +54,12 @@
     }
 
     .img {
-      width: 50vw;
+      width: 60vw;
       transition: width 0.5s, height 0.5s;
     }
 
     .img:hover {
-      width: 60vw;
+      width: 70vw;
     }
 
     @media (max-width: 600px) {
@@ -69,13 +69,16 @@
         gap: 10pt;
       }
       .img {
-        width: 80vw;
+        width: 70vw;
       }
       .img:hover {
         width: 80vw;
       }
       .none-on-mobile {
         display: none;
+      }
+      .banner {
+        max-width: 60vw;
       }
     }
 
@@ -131,14 +134,9 @@
 
     <h1>Lindelöf</h1>
     <div class="text">
-      <p>I like making doodles. Click on the open sketchbook to see more pages on my insta.</p>
       <div class="banner">
         <p>
-          Joey: Look, I know you're hurtin' now, but in time you'll realize what you've achieved.
-          Jimmy Rabbitte: I've achieved nothing!
-          Joey: You're missin' the point. The success of the band was irrelevant - you raised their expectations of life, you lifted their horizons. Sure we could have been famous and made albums and stuff, but that would have been predictable. This way it's poetry.
-          Jimmy Rabbitte: It's a pisser is what it is, Joey.
-          - The Commitments (1991)
+          I like making doodles. Click on the open sketchbook to see more pages on my insta.
         </p>
       </div>
       <!-- <audio src="bon.mp3" controls></audio> -->
@@ -146,7 +144,7 @@
 
     <div class="gallery">
       <a href="https://instagram.com/lin.sketchbook">
-        <img src="content/a4.jpg" alt="a4" class="img"></img>
+        <img src="content/sb1.jpg" alt="sketchbook" class="img"></img>
       </a>
     </div>
 
@@ -157,11 +155,11 @@
       <a href="https://instagram.com/lin.sketchbook">
         <img src="icons/instagram.png" alt="Instagram" width="120">
       </a>
+      <a href="https://soundcloud.com/user-661424692">
+        <img src="icons/soundcloud.png" alt="SoundCloud" width="100">
+      </a>
       <a href="comingsoon.html">
         <img src="icons/youtube.png" alt="YouTube" width="100">
-      </a>
-      <a href="mailto:johannes.olaf@yahoo.de">
-        <img src="icons/mail.png" alt="Email" width="100">
       </a>
     </div>
 
