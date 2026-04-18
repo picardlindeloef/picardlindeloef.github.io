@@ -29,7 +29,7 @@
       margin-top: 50pt;
     }
 
-    .text {
+    .outer-banner {
       max-width: 70vw;
       text-align: center;
       margin: 0 auto 20pt auto;
@@ -75,12 +75,31 @@
       .img:hover {
         width: 80vw;
       }
-      .none-on-mobile {
-        display: none;
-      }
       .banner {
         max-width: 60vw;
       }
+    }
+
+    .rotate-hint {
+      display: none;
+    }
+
+    @media (max-width: 500px) and (orientation: portrait) {
+      .rotate-hint {
+        display: block;
+      }
+      .outer-banner {
+        display: none;
+      }
+    }
+    
+    .hint-style {
+      font-size: small;
+      margin: 10%;
+      margin-top: 0;
+      padding: 2%;
+      background-color: black;
+      color: white;
     }
 
     .socials {
@@ -134,13 +153,19 @@
   <div class="container">
 
     <h1>Lindelöf</h1>
-    <div class="text">
+
+    <div class="outer-banner">
       <div class="banner">
         <p>
           I like making doodles. Click on the open sketchbook to see more pages on my insta.
         </p>
       </div>
-      <!-- <audio src="bon.mp3" controls></audio> -->
+    </div>
+
+    <div class="rotate-hint">
+      <p class="hint-style">
+        Wenn du am Handy bisch, halts quer, vertrau.
+      </p>
     </div>
 
     <div class="gallery">
