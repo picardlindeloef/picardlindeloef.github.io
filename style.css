@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-size: 16pt;
+    background-image: url("content/v2.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgb(136, 143, 178);
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10pt;
+    align-items: center;
+}
+
+.margin-headings {
+    margin: 20pt;
+    margin-top: 50pt;
+}
+
+.outer-banner {
+    max-width: 70vw;
+    text-align: center;
+    margin: 0 auto 20pt auto;
+}
+
+.banner {
+    overflow: hidden;
+    white-space: nowrap;
+    background: black;
+    color: white;
+    max-width: 45vw;
+    margin: 0 auto;
+}
+
+.banner p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    to { transform: translateX(-100%); }
+}
+
+.img {
+    width: 60vw;
+    transition: width 0.5s, height 0.5s;
+}
+
+.img:hover {
+    width: 70vw;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+    }
+    .img {
+    width: 70vw;
+    }
+    .img:hover {
+    width: 80vw;
+    }
+    .banner {
+    max-width: 60vw;
+    }
+}
+
+.rotate-hint {
+    display: none;
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .rotate-hint {
+    display: block;
+    }
+    .outer-banner {
+    display: none;
+    }
+}
+
+.hint-style {
+    font-size: small;
+    margin: 10%;
+    margin-top: 0;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.faq details {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.faq summary {
+    cursor: pointer;
+}
+
+.faq p {
+    margin-left: 10pt;
+}
+
+.faq {
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.faq img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.faq details {
+    width: 100%;
+}
+
+.me-img {
+    width: 200pt;
+}
+
+.footer img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
