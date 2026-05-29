@@ -14,10 +14,11 @@
 
     <div class="outer-banner">
       <div class="banner">
-        <p>
+        <p id="banner-text">
           I like making doodles. Click on the open sketchbook to see more pages on my insta.
         </p>
       </div>
+      <button id="pause" onclick="toggleBannerAnimation()">❚❚</button>
     </div>
 
     <div class="rotate-hint">
@@ -72,7 +73,7 @@
         <p>A skirmisher. Or an onager. Wololo</p>
       </details>
       <details>
-        <summary>Yo, just give me a random Link too boost my mood pls.</summary>
+        <summary>Yo, just give me a random Link to boost my mood pls.</summary>
         <p><a href="https://www.youtube.com/watch?v=z4NQp6fCWMs&list=LL&index=172">Link</a></p>
       </details>
       <details>
@@ -94,5 +95,14 @@
     </div>
 
   </div>
+  <script>
+    function toggleBannerAnimation() {
+      const text = document.getElementById('banner-text');
+      const btn = document.getElementById('pause');
+      const isPaused = text.style.animationPlayState === 'paused';
+      text.style.animationPlayState = isPaused ? 'running' : 'paused';
+      btn.textContent = isPaused ? '❚❚' : '▶';
+    }
+  </script>
 </body>
 </html>

@@ -25,13 +25,16 @@ body {
     max-width: 70vw;
     text-align: center;
     margin: 0 auto 20pt auto;
+    display: flex;
+    gap: 10px;
 }
 
 .banner {
     overflow: hidden;
     white-space: nowrap;
-    background: black;
-    color: white;
+    background: radial-gradient(circle at 10% 10%, #333, #000 45%);
+    color: #fffbeb;
+    border: 2px solid #7b683f;
     max-width: 45vw;
     margin: 0 auto;
 }
@@ -39,7 +42,7 @@ body {
 .banner p {
     display: inline-block;
     padding-left: 100%;
-    animation: scroll 30s linear infinite;
+    animation: scroll 25s linear infinite;
 }
 
 @keyframes scroll {
@@ -47,12 +50,12 @@ body {
 }
 
 .img {
-    width: 60vw;
+    width: 55vw;
     transition: width 0.5s, height 0.5s;
 }
 
 .img:hover {
-    width: 70vw;
+    width: 65vw;
 }
 
 @media (max-width: 600px) {
@@ -83,6 +86,9 @@ body {
     .outer-banner {
     display: none;
     }
+    .pause {
+    display: none;
+    }
 }
 
 .hint-style {
@@ -97,6 +103,25 @@ body {
 .socials {
     display: flex;
     gap: 20px;
+}
+
+.socials img {
+    transition: transform 0.2s ease;
+    border: 2px solid black;
+}
+
+.socials a:hover img,
+.socials a:focus img {
+    animation: wobble 0.8s ease-in-out;
+}
+
+@keyframes wobble {
+    0%, 100% { transform: translateX(0) rotate(0); }
+    15% { transform: translateX(-4px) rotate(-4deg); }
+    30% { transform: translateX(4px) rotate(4deg); }
+    45% { transform: translateX(-2px) rotate(-2deg); }
+    60% { transform: translateX(2px) rotate(2deg); }
+    75% { transform: translateX(-1px) rotate(-1deg); }
 }
 
 .faq details {
@@ -114,7 +139,7 @@ body {
 
 .faq {
     width: 100%;
-    max-width: 700px;
+    max-width: 710px;
     box-sizing: border-box;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -138,4 +163,19 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+h2 {
+    padding: 10px 14px;
+    background: radial-gradient(circle at 10% 10%, #333, #000 45%);
+    color: #fffbeb;
+    border: 2px solid #7b683f;
+    letter-spacing: 0.08em;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    border-color: #7b683f;
 }
