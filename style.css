@@ -32,7 +32,7 @@ body {
 .banner {
     overflow: hidden;
     white-space: nowrap;
-    background: radial-gradient(circle at 10% 10%, #333, #000 45%);
+    background: black;
     color: #fffbeb;
     border: 2px solid #7b683f;
     max-width: 45vw;
@@ -167,9 +167,8 @@ body {
 
 h2 {
     padding: 10px 14px;
-    background: radial-gradient(circle at 10% 10%, #333, #000 45%);
+    background: black;
     color: #fffbeb;
-    border: 2px solid #7b683f;
     letter-spacing: 0.08em;
 }
 
@@ -178,4 +177,10 @@ button {
     cursor: pointer;
     border-radius: 0;
     border-color: #7b683f;
+    color: black;
+    min-width: 60px;
+}
+
+.footer {
+    background-color: black;
 }
