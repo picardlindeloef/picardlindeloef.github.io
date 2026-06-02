@@ -159,9 +159,13 @@ body {
     width: 200pt;
 }
 
-.footer img{
-    margin: 0;
-    padding: 0;
+.footer {
+    margin: 0 -10pt -10pt;
+    width: calc(100% + 20pt);
+}
+
+.footer img {
+    display: block;
     width: 100%;
 }
 
@@ -179,8 +183,4 @@ button {
     border-color: #7b683f;
     color: black;
     min-width: 60px;
-}
-
-.footer {
-    background-color: black;
 }
