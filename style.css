@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-size: 16pt;
-    background-image: url("content/v2.png");
+    background-image: url("content/top.png");
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
@@ -127,6 +127,16 @@ body {
 .faq details {
     border-bottom: 1px solid #ddd;
     padding: 12px 0;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    transform-origin: top center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .faq details:hover {
+        transform: translateY(-2px) scale(1.02);
+        background-color: rgba(255,255,255,0.05);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    }
 }
 
 .faq summary {
@@ -139,7 +149,7 @@ body {
 
 .faq {
     width: 100%;
-    max-width: 710px;
+    max-width: 750px;
     box-sizing: border-box;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -151,12 +161,20 @@ body {
     display: block;
 }
 
+.faq p img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
 .faq details {
     width: 100%;
 }
 
 .me-img {
     width: 200pt;
+    display: inline-block;
 }
 
 .footer {
