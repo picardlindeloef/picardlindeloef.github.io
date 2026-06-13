@@ -7,13 +7,21 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(136, 143, 178);
     font-family: sans-serif;
+    cursor: url("icons/cursor.png"), auto;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     padding: 10pt;
     align-items: center;
+}
+
+a:hover,
+button:hover,
+details > summary:hover {
+    cursor: url("icons/pointer.png"), auto;
 }
 
 .margin-headings {
@@ -187,6 +195,10 @@ body {
 .footer img {
     display: block;
     width: 100%;
+}
+
+h1 {
+    font-size: 3.25rem;
 }
 
 h2 {
