@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(136, 143, 178);
     font-family: sans-serif;
-    cursor: url("icons/cursor.png"), auto;
+    cursor: url("icons/cursor.png") 8 8, auto;
 }
 
 .container {
@@ -18,10 +18,12 @@ body {
     align-items: center;
 }
 
+a,
+button,
 a:hover,
 button:hover,
 details > summary:hover {
-    cursor: url("icons/pointer.png"), auto;
+    cursor: url("icons/pointer.png") 8 8, none;
 }
 
 .margin-headings {
