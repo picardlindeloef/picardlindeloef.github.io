@@ -10,7 +10,7 @@
 <body>
   <div class="container">
 
-    <h1>Lindelöf</h1>
+    <h1 onclick="playSound()">Lindelöf</h1>
 
     <div class="outer-banner">
       <div class="banner">
@@ -112,6 +112,11 @@
       const isPaused = text.style.animationPlayState === 'paused';
       text.style.animationPlayState = isPaused ? 'running' : 'paused';
       btn.textContent = isPaused ? '❚❚' : '▶';
+    }
+    
+    function playSound() {
+      const audio = new Audio('crunch.m4a');
+      audio.play();
     }
   </script>
 </body>
