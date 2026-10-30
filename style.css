@@ -17,7 +17,10 @@ body {
     align-items: center;
 }
 
-
+a:hover,
+button:hover {
+    cursor: url("icons/pointer.png") 8 8, none;
+}
 
 .margin-headings {
     margin: 20pt;
@@ -174,7 +177,7 @@ body {
     box-sizing: border-box;
     overflow-wrap: break-word;
     word-break: break-word;
-    cursor:pointer;
+    cursor: url("icons/pointer.png") 8 8, none;
 }
 
 .faq img {
@@ -212,7 +215,7 @@ body {
 h1 {
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
-    cursor: pointer;
+    cursor: url("icons/pointer.png") 8 8, none;
 }
 
 h2 {
@@ -224,7 +227,6 @@ h2 {
 
 button {
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 0;
     border: 1px solid rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.7);
